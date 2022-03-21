@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:wght@100;300;400&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -7,3 +9,106 @@ img {
   max-width: 100%;
   margin: 0;
 }
+
+ul{
+  display: flex;
+  justify-content:flex-end;
+  align-content: center;
+  margin-right: 160px;
+  list-style-type: none;
+}
+
+li{
+   padding-left: 20px;
+}
+
+a{
+  font-family: 'Source Sans Pro';
+  text-decoration: none;
+  color: white;
+}
+
+p{
+  font-family: 'Source Sans Pro';
+}
+
+
+.banner--header{
+  position: absolute;
+  z-index: -2;
+  top: -5px;  
+}
+
+.logo--header{
+  position: absolute;
+  width: 150px;
+  margin-left: 160px;
+  margin-top:-18px;
+}
+
+.banner--color{
+  background-color: rgb(0,0,0,0.2);
+  padding: 10px;
+  
+}
+
+.header--text{
+  margin-left: 160px;
+  margin-top: 100px;
+}
+
+.header--text_decoration{
+  color:white;
+} 
+
+.btn{
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn--empresa{
+  color:#C34A51;
+  margin-right: 50px;
+  background-color: white;
+  padding: 15px 55px;
+  border-radius: 10px;
+}
+
+
+.btn--contratar{
+  color:black;
+  background-color: white;
+  padding: 15px 55px;
+  border-radius: 10px;
+  
+}
+
+.header--text_h1{
+  margin-bottom: 0;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header--text_p{
+  font-size: 30px;
+margin-top: 0;
+margin-bottom: 50px;
+}
+
+/*Sobre Nós*/
+
+.sobre{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 360px;
+  align-content: center;
+
+}
+
+.sobre--article{
+  
+}
+
+
