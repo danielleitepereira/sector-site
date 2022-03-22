@@ -101,14 +101,40 @@ margin-bottom: 50px;
 
 .sobre{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 600px 600px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   margin-top: 360px;
   align-content: center;
-
 }
 
-.sobre--article{
-  
+.sobre--imgEquipe{
+  width: 450px;
+  box-shadow: -11px -9px 0px 2px #552650;
+}
+
+
+.conquistas{
+  display: flex;
+  font-family: 
+}
+
+/*Depoimentos*/
+
+.depoimentos{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+ 
+}
+
+.depoimentos--primeiro , .depoimentos--segundo, .depoimentos--terceiro{
+  margin-top: 160px;
+  padding: 10px;
+  width: 250px;
+  border: 5px solid #C34A51;
+  border-radius: 0px 40px 0px 0px;
 }
 
 
