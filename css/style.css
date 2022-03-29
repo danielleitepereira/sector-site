@@ -1,53 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:wght@100;300;400&display=swap");
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  margin: 0;
-}
-
-ul {
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
-  margin-right: 160px;
-  list-style-type: none;
-}
-
-li {
-  padding-left: 20px;
-}
-
-a {
-  font-family: "Source Sans Pro";
-  text-decoration: none;
-  color: white;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Montserrat", sans-serif;
-}
-
-p {
-  font-family: "Source Sans Pro";
-}
-
-span {
-  font-size: 50px;
-}
-
-.banner--header {
-  position: absolute;
-  z-index: -2;
-  top: -5px;
-}
-
 .logo--header {
   position: absolute;
   width: 150px;
@@ -61,8 +11,8 @@ span {
 }
 
 .header--text {
-  margin-left: 160px;
-  margin-top: 100px;
+  margin-left: 313px;
+  margin-top: 50px;
 }
 
 .header--text_decoration {
@@ -74,6 +24,7 @@ span {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .btn--empresa {
@@ -82,36 +33,180 @@ span {
   background-color: white;
   padding: 15px 55px;
   border-radius: 10px;
+  animation: 3.5s ease-in-out slide--btn;
 }
 
-.btn--contratar {
-  color: black;
-  background-color: white;
-  padding: 15px 55px;
-  border-radius: 10px;
+@keyframes slide--btn {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
 }
 
 .header--text_h1 {
+  margin-top: 0;
   margin-bottom: 0;
   font-size: 60px;
+  animation: 1s ease-in-out slide--text__h1;
+}
+
+@keyframes slide--text__h1 {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
 }
 
 .header--text_p {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 50px;
+  animation: 2s ease-in-out slide--text__p;
+}
+
+@keyframes slide--text__p {
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+  from {
+    margin-top: 30px;
+    opacity: 0;
+  }
+}
+
+.header--flatgirl__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -400px;
+  margin-right: 100px;
+  animation: 3s ease-in-out slidein;
+}
+
+.header--flatgirl {
+  width: 600px;
+}
+
+@keyframes slidein {
+  to {
+    margin-right: 100px;
+    opacity: 1;
+  }
+  from {
+    margin-right: -100px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1700px) {
+  .header--flatgirl__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -400px;
+    margin-right: -150px;
+    animation: 3s ease-in-out slidein;
+  }
+
+  .header--flatgirl {
+    width: 600px;
+  }
+
+  @keyframes slidein {
+    to {
+      margin-right: -150px;
+      opacity: 1;
+    }
+    from {
+      margin-right: 100px;
+      opacity: 0;
+    }
+  }
+
+  .header--text {
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header--flatgirl__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -250px;
+    margin-right: 150px;
+    animation: 3s ease-in-out slidein;
+  }
+
+  .header--flatgirl {
+    width: 450px;
+  }
+
+  @keyframes slidein {
+    to {
+      margin-right: 150px;
+      opacity: 1;
+    }
+    from {
+      margin-right: -100px;
+      opacity: 0;
+    }
+  }
+
+  .header--text {
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 965px) {
+  .header--flatgirl__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -250px;
+    margin-right: -120px;
+    animation: 3s ease-in-out slidein;
+  }
+
+  .header--flatgirl {
+    width: 450px;
+  }
+
+  @keyframes slidein {
+    to {
+      margin-right: -120px;
+      opacity: 1;
+    }
+    from {
+      margin-right: -100px;
+      opacity: 0;
+    }
+  }
+
+  .header--text {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
 }
 
 /*Sobre Nós*/
 
 .sobre {
+  position: sticky;
   display: grid;
   grid-template-columns: 600px 600px;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  margin-top: 460px;
+  margin-top: 160px;
   align-content: center;
+}
+
+.sobre h2 {
+  text-align: center;
 }
 
 .sobre--imgEquipe {
@@ -188,6 +283,12 @@ span {
   background-color: #c34a51;
 }
 
+.serviços--temas__h1:hover {
+  color: #c34a51;
+  background-color: white;
+  box-shadow: 2px 2px 20px rgb(243, 243, 243);
+}
+
 .serviços--texto {
   display: grid;
   grid-template-columns: 400px;
@@ -200,8 +301,9 @@ span {
   text-align: center;
   color: white;
   background-color: #c34a51;
-  padding: 15px;
+  padding: 18px 32px;
   border-radius: 10px;
+  font-size: 16px;
 }
 
 /*Outros*/
