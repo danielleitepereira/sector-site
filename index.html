@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sass/card.css">
     <title>Sector - Soluções Empresariais</title>
 </head>
 <body>  
@@ -56,9 +57,9 @@
 </section>
 
 <section class="conquistas">
-  <h2>+ de <span>200</span> <br> clientes</h2>
-  <h2> <span>15 anos</span> <br> de mercado</h2>
-  <h2>Atendimento <br> Personalizado</h2>
+  <h2>+ de <span class=" timer count-number" data-to="160" data-speed="1500"></span> <br> clientes</h2>
+  <h2> <span class="timer count-number" data-to="22" data-speed="1500"></span> <br> Anos de mercado</h2>
+  <h2> <span class="timer count-number" data-to="100" data-speed="1500"></span> % <br> de aprovação <br> dos clientes</h2>
 
 </section>
 
@@ -73,8 +74,7 @@
     
    
     <section class="depoimentos">
-      
-      <article class="depoimentos--primeiro">
+      <article class="depoimentos--primeiro" >
            <img class="foto--depoimento1" src="img/man.png" alt="">
         <h3 class="depoimento--primeiro_h3">Daniel Leite</h3>
         <p class="depoimento--primeiro_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -93,6 +93,95 @@
       </article>
     </section>
 
+    <!--DEPOIMENTOS MOBILE-->
+    <div class="depoimentos-mobile_center">
+      <div class="swiper-container">
+    
+        <div class="swiper-wrapper">
+    
+          <!--Começo Card-->
+          <div class="slider-item swiper-slide">
+    
+            <div class="slider-image-wrapper">
+              <img class="slider-image" src="img/header-banner.png" alt="">
+            </div>
+    
+    
+            <div class="slider-image-wrapper">
+              <img class="foto--depoimento1_mobile" src="img/man.png" alt="">
+            </div>
+    
+            <div class="slider-item-content">
+              <h1>Daniel Leite</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+    
+            </div>
+    
+    
+    
+          </div>
+    
+          <!--Fim Card-->
+    
+          <!--Começo Card-->
+          <div class="slider-item swiper-slide">
+    
+            <div class="slider-image-wrapper">
+              <img class="slider-image" src="img/header-banner.png" alt="">
+            </div>
+    
+    
+            <div class="slider-image-wrapper">
+              <img class="foto--depoimento1_mobile" src="img/man.png" alt="">
+            </div>
+    
+            <div class="slider-item-content">
+              <h1>Anderson Silva</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+    
+            </div>
+    
+    
+    
+          </div>
+    
+          <!--Fim Card-->
+    
+          <!--Começo Card-->
+          <div class="slider-item swiper-slide">
+    
+            <div class="slider-image-wrapper">
+              <img class="slider-image" src="img/header-banner.png" alt="">
+            </div>
+    
+    
+            <div class="slider-image-wrapper">
+              <img class="foto--depoimento1_mobile" src="img/man.png" alt="">
+            </div>
+    
+            <div class="slider-item-content">
+              <h1>Cristiano Souza</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+    
+            </div>
+    
+    
+    
+          </div>
+    
+          <!--Fim Card-->
+    
+          <div class="slider-buttons">
+            <button class="swiper-button-prev">Prev</button>
+            <button class="swiper-button-next">Next</button>
+          </div>
+    
+          <div class="swiper-pagination"></div>
+    
+        </div>
+      </div>
+
+
     
 
     <section class="videos">
@@ -110,6 +199,12 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.088758635134!2d-46.52320908454342!3d-23.636992170275825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42a6a9ee97c7%3A0x92ccdd8758ff0296!2sR.%20Espanha%2C%20883%20-%20Parque%20das%20Na%C3%A7%C3%B5es%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009210-010!5e0!3m2!1spt-BR!2sbr!4v1648054671593!5m2!1spt-BR!2sbr"
         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
+
     
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+    <script src="./js/count-animation.js" type="text/javascript"></script>
+    <script src="./js/card-slider.js" type="text/javascript"></script>
 </body>
 </html>

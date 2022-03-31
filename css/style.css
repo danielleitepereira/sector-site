@@ -102,96 +102,6 @@
   }
 }
 
-@media (max-width: 1700px) {
-  .header--flatgirl__wrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -400px;
-    margin-right: -150px;
-    animation: 3s ease-in-out slidein;
-  }
-
-  .header--flatgirl {
-    width: 600px;
-  }
-
-  @keyframes slidein {
-    to {
-      margin-right: -150px;
-      opacity: 1;
-    }
-    from {
-      margin-right: 100px;
-      opacity: 0;
-    }
-  }
-
-  .header--text {
-    margin-left: 150px;
-    margin-top: 50px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .header--flatgirl__wrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -250px;
-    margin-right: 150px;
-    animation: 3s ease-in-out slidein;
-  }
-
-  .header--flatgirl {
-    width: 450px;
-  }
-
-  @keyframes slidein {
-    to {
-      margin-right: 150px;
-      opacity: 1;
-    }
-    from {
-      margin-right: -100px;
-      opacity: 0;
-    }
-  }
-
-  .header--text {
-    margin-left: 150px;
-    margin-top: 50px;
-  }
-}
-
-@media (max-width: 965px) {
-  .header--flatgirl__wrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -250px;
-    margin-right: -120px;
-    animation: 3s ease-in-out slidein;
-  }
-
-  .header--flatgirl {
-    width: 450px;
-  }
-
-  @keyframes slidein {
-    to {
-      margin-right: -120px;
-      opacity: 1;
-    }
-    from {
-      margin-right: -100px;
-      opacity: 0;
-    }
-  }
-
-  .header--text {
-    margin-left: 50px;
-    margin-top: 50px;
-  }
-}
-
 /*Sobre Nós*/
 
 .sobre {
@@ -252,9 +162,11 @@
   padding: 10px;
   width: 300px;
   height: 309px;
-  border: 5px solid #c34a51;
-  border-radius: 0px 40px 0px 0px;
+  box-shadow: -9px -9px 26px #c34a5018, 9px 9px 16px #dddddd;
+  border-radius: 20px;
 }
+
+
 
 /*Nossos Serviços*/
 
@@ -321,3 +233,252 @@
 }
 
 /*Footer*/
+
+/*Media Query*/
+
+@media (max-width: 1700px) {
+  .header--flatgirl__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -400px;
+    margin-right: -150px;
+    animation: 3s ease-in-out slidein;
+  }
+
+  .header--flatgirl {
+    width: 600px;
+  }
+
+  @keyframes slidein {
+    to {
+      margin-right: -150px;
+      opacity: 1;
+    }
+    from {
+      margin-right: 100px;
+      opacity: 0;
+    }
+  }
+
+  .header--text {
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+
+  .conquistas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    gap: 167px;
+    text-align: center;
+  }
+  .sobre {
+    position: sticky;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 160px;
+    align-content: center;
+    gap: 70px;
+  }
+
+  .sobre h2 {
+    text-align: center;
+  }
+
+  .sobre--imgEquipe {
+    width: 450px;
+    box-shadow: -11px -9px 0px 2px #552650;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header--flatgirl__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -250px;
+    margin-right: 150px;
+    animation: 3s ease-in-out slidein;
+  }
+
+  .header--flatgirl {
+    width: 450px;
+  }
+
+  @keyframes slidein {
+    to {
+      margin-right: 150px;
+      opacity: 1;
+    }
+    from {
+      margin-right: -100px;
+      opacity: 0;
+    }
+  }
+
+  .header--text {
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+
+  /*Nossos Serviços*/
+
+  .serviços {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+  }
+
+  .serviços--temas {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: start;
+    column-gap: 70px;
+    row-gap: 70px;
+  }
+
+  .serviços--temas__h1 {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 10px 10px;
+    width: 150px;
+    height: 150px;
+    background-color: #c34a51;
+  }
+
+  .serviços--temas__h1:hover {
+    color: #c34a51;
+    background-color: white;
+    box-shadow: 2px 2px 20px rgb(243, 243, 243);
+  }
+
+  .serviços--texto {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .btn--consultor {
+    width: 150px;
+    text-align: center;
+    color: white;
+    background-color: #c34a51;
+    padding: 18px 32px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .conquistas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    gap: 100px;
+    text-align: center;
+  }
+
+  .depoimentos {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    margin-top: 160px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 965px) {
+  .header--flatgirl__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -250px;
+    margin-right: -120px;
+    animation: 3s ease-in-out slidein;
+  }
+
+  .header--flatgirl {
+    width: 450px;
+  }
+
+  @keyframes slidein {
+    to {
+      margin-right: -120px;
+      opacity: 1;
+    }
+    from {
+      margin-right: -100px;
+      opacity: 0;
+    }
+  }
+
+  .header--text {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  /*Nossos Serviços*/
+
+  .serviços {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 400px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .serviços--temas {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(2, 160px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .serviços--temas__h1 {
+    display: flex;
+    align-items: flex-end;
+    width: 150px;
+    height: 150px;
+    background-color: #c34a51;
+  }
+  .conquistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    gap: 100px;
+    text-align: center;
+  }
+
+  .sobre {
+    position: sticky;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 400px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 60px;
+    align-content: center;
+    gap: 70px;
+  }
+
+  .sobre h2 {
+    text-align: center;
+  }
+
+  .sobre--imgEquipe {
+    width: 450px;
+    box-shadow: -11px -9px 0px 2px #552650;
+  }
+}
