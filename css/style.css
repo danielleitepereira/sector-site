@@ -1,3 +1,5 @@
+
+
 .logo--header {
   position: absolute;
   width: 150px;
@@ -102,6 +104,10 @@
   }
 }
 
+.dropdown {
+  display: none;
+}
+
 /*Sobre Nós*/
 
 .sobre {
@@ -125,12 +131,20 @@
 }
 
 .conquistas {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2 , 100px);
   justify-content: center;
+  justify-items: center;
   align-items: center;
   margin-top: 160px;
-  gap: 267px;
+  gap:20px 250px;
   text-align: center;
+}
+
+.conquistas--img{
+  grid-row: 1;
+  max-width: 30%;
 }
 
 /*Depoimentos*/
@@ -234,7 +248,7 @@
 
 /*Footer*/
 
-/*Media Query*/
+/*Media Query
 
 @media (max-width: 1700px) {
   .header--flatgirl__wrapper {
@@ -266,12 +280,15 @@
   }
 
   .conquistas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 160px;
-    gap: 167px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 100px);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 160px;
+  gap:20px 250px;
+  text-align: center;
   }
   .sobre {
     position: sticky;
@@ -293,6 +310,8 @@
     width: 450px;
     box-shadow: -11px -9px 0px 2px #552650;
   }
+  
+
 }
 
 @media (max-width: 1280px) {
@@ -324,7 +343,7 @@
     margin-top: 50px;
   }
 
-  /*Nossos Serviços*/
+  /*Nossos Serviços
 
   .serviços {
     display: grid;
@@ -376,12 +395,15 @@
   }
 
   .conquistas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 160px;
-    gap: 100px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 100px);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 160px;
+  gap:20px 150px;
+  text-align: center;
   }
 
   .depoimentos {
@@ -423,7 +445,7 @@
     margin-top: 50px;
   }
 
-  /*Nossos Serviços*/
+  /*Nossos Serviços
 
   .serviços {
     display: grid;
@@ -456,8 +478,11 @@
     justify-content: center;
     align-items: center;
     margin-top: 160px;
-    gap: 100px;
+    gap: 50px;
     text-align: center;
+  }
+  .conquistas--img{
+    max-width: 10%;
   }
 
   .sobre {
@@ -482,3 +507,117 @@
     box-shadow: -11px -9px 0px 2px #552650;
   }
 }
+
+
+@media(max-width:800px){
+    .ul--desktop{
+     display:none;
+    }
+
+    .dropdown{
+      display: flex;
+      justify-content: end;
+    }
+    
+    .ul--mobile{
+      margin: 0;
+      display: none;
+      padding: 20px;
+      background: linear-gradient(180deg, #AC4253 0%, #43224D 100%);
+      border-radius: 10px;
+    }
+
+.teste{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .ul--mobile a{ 
+      display: flex;
+      justify-content: start;
+      padding: 12px 16px;
+      column-gap: 10px;
+    }
+
+    .ul--mobile__img{
+      max-width: 30px;
+    
+    }
+
+
+    .dropdown:hover .ul--mobile{
+      display: block;
+      position: absolute;
+      top: 50px;
+    }
+
+
+    .icon--dropdown{
+      display: flex;
+      max-width: 20px;
+    }
+
+  .logo--header {
+    position: absolute;
+    width: 150px;
+    margin-left: 60px;
+    margin-top: -30px;
+  }
+  
+  .banner--color {
+    background-color: rgb(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .header--text {
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 50px;
+  }
+  
+  .header--text_decoration {
+    color: white;
+  }
+  
+  .header--text_h1{
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .header--text_p{
+    font-size: 20px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .btn--empresa {
+    color: #c34a51;
+    background-color: white;
+    margin: 0;
+    padding: 15px 55px;
+    border-radius: 10px;
+    animation: 3.5s ease-in-out slide--btn;
+  }
+
+  .header--flatgirl{
+    display: none;
+  }
+
+  .videos iframe{
+    width: 360px;
+  }
+
+}
+
+*/

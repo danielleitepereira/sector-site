@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
     <link rel="stylesheet" href="./css/sass/card.css">
+    
     <title>Sector - Soluções Empresariais</title>
 </head>
 <body>  
@@ -15,12 +17,24 @@
       
       <div class="banner--color">
         <img class="logo--header" src="/img/LogoSectorBrancoPng.png" alt="logo-Sector">
-      <ul>
+      <ul class="ul--desktop">
         <li><a href="#sobreNos">Sobre Nós</a></li>
         <li><a href="#">Soluções</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
+
+      <section class="dropdown">
+      <img class="ul--mobile__img" src="./img/dropdown-button.png" alt="">
+      <div class="ul--mobile">
+        <div class="teste">
+        <a  href="#"><img class="icon--dropdown" src="./img/icones_dropdown_info.svg" alt=""> Serviços</a>
+        <a href="#"><img class="icon--dropdown" src="./img/icones_dropdown_whats.svg" alt="">Contato</a>
+        <a href="#"><img class="icon--dropdown" src="./img/icones_dropdown_videos.svg" alt="">Vídeos</a>
       </div>
+    </div>
+      </section>
+    </div>
+
      
     </nav>
   
@@ -57,8 +71,11 @@
 </section>
 
 <section class="conquistas">
+  <img class="conquistas--img"  src="./img/avaliacao-do-cliente.png" alt="">
   <h2>+ de <span class=" timer count-number" data-to="160" data-speed="1500"></span> <br> clientes</h2>
+  <img class="conquistas--img" src="./img/rocket.png" alt="">
   <h2> <span class="timer count-number" data-to="22" data-speed="1500"></span> <br> Anos de mercado</h2>
+  <img class="conquistas--img" src="./img/goal.png" alt="">
   <h2> <span class="timer count-number" data-to="100" data-speed="1500"></span> % <br> de aprovação <br> dos clientes</h2>
 
 </section>
@@ -106,7 +123,6 @@
               <img class="slider-image" src="img/header-banner.png" alt="">
             </div>
     
-    
             <div class="slider-image-wrapper">
               <img class="foto--depoimento1_mobile" src="img/man.png" alt="">
             </div>
@@ -116,8 +132,6 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
     
             </div>
-    
-    
     
           </div>
     
@@ -180,25 +194,25 @@
     
         </div>
       </div>
+      </div>
 
 
     
-
     <section class="videos">
       <h1>Entenda seus direitos</h1>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/
-      videoseries?list=PLTFd1PLrNqjSGzPKmRxfVvNBpti-Q414u"
-        title="YouTube video player" frameborder="0"
+              videoseries?list=PLTFd1PLrNqjSGzPKmRxfVvNBpti-Q414u" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </section>
 
     <section class="maps">
-      
+
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.088758635134!2d-46.52320908454342!3d-23.636992170275825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42a6a9ee97c7%3A0x92ccdd8758ff0296!2sR.%20Espanha%2C%20883%20-%20Parque%20das%20Na%C3%A7%C3%B5es%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009210-010!5e0!3m2!1spt-BR!2sbr!4v1648054671593!5m2!1spt-BR!2sbr"
         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
+    
 
     
 
